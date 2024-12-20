@@ -1,0 +1,57 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #007bff;
+    margin: 20px 0;
+  }
+  
+  /* Animation Styles */
+  .animation-container {
+    position: relative;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ccc; /* To visualize the container */
+  }
+  
+  .ball {
+    width: 80px;
+    height: 80px;
+    background-color: orange;
+    border-radius: 50%;
+    animation: moveBall 3s infinite;
+  }
+  
+  @keyframes moveBall {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(100px, -100px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  /* NYC Event Image Styling */
+.event-image {
+    max-width: 100%;  /* Ensures the image scales responsively */
+    height: auto;     /* Maintains aspect ratio */
+    margin: 0 auto;   /* Centers the image horizontally */
+    display: block;   /* Ensures the image behaves like a block element */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for better aesthetics */
+  }
+  
+  
+  
+  
+  
